@@ -45,7 +45,7 @@ def get_student(student_id):
     if not item:
         return jsonify({"error": "Student not found"}), 404
 
-    # Enrich with course data — graceful degradation if course-service is down
+    # Enrich with course data — graceful degradation if course-service is  down
     course_code = item.get("course")
 
     if course_code:
