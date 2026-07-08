@@ -13,7 +13,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir --prefix=/install -r requirements.txt
 
-
 FROM python:3.12-slim AS runtime
 
 WORKDIR /app
