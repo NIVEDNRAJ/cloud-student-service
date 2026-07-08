@@ -21,7 +21,7 @@ COURSE_URL = os.environ.get("COURSE_SERVICE_URL", "http://course-service")
 dynamodb = boto3.resource("dynamodb", region_name=REGION)
 students_table = dynamodb.Table("nived-student")
 
-# Reusable HTTP session with retry (keeps TCP connections warm)
+# Reusable HTTP session with retry (keeps TCP connections warm))
 session = requests.Session()
 retry = Retry(
     total=3,
